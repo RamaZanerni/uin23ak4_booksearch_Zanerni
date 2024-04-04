@@ -1,0 +1,68 @@
+.card_container{
+  display: inline;
+  .card__item{
+      display: inline-flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-bottom: 10px;
+      width: 200px;
+      background: transparent;
+      margin: 10px 20px;
+      padding: 5px;
+      .card__img{ 
+        img{
+          margin: auto;
+          width: 100%;
+        }
+      }
+      .card_detials{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h3{
+          font-size: 1.2rem;
+          color: black;
+          text-decoration-line: none;
+          font-weight: 600;
+          margin-top: 15px;
+          transition: 0.2s;
+        }
+        .author{
+          font-size: 1.1rem;
+          color: black;
+          font-weight: 500;
+        }
+        button{
+          background: #0583c7;
+          border-radius: 5px;
+          border: none;
+          padding: 8px 30px;
+          margin: auto;
+          a{
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            text-decoration-line: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .card__info h3 a{
+      font-size: 1.1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px){
+    .card__info h3 a{
+      font-size: 1rem;
+    }
+
+    .card__card-bottom span i{
+      font-size: 1rem;
+    }
+
+  }
